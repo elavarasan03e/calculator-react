@@ -31,6 +31,7 @@ function App() {
   
   return (
     <div className="calculator">
+      <h2>React Calculator</h2>
       <input type="text" value={display} readOnly />
       <div className="result">{result}</div>
       <div>
