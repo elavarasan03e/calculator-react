@@ -16,6 +16,10 @@ function App() {
 
   const calculate = () => {
     try {
+      if(display.trim()===''){
+        setResult('Error');
+        return;
+      }
       const calculatedResult = eval(display);
       if (isNaN(calculatedResult)) {
         setResult('NaN');
