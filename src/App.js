@@ -17,9 +17,6 @@ function App() {
   const calculate = () => {
     try {
       const calculatedResult = eval(display);
-      if(display.length()===0){
-        setResult('Error')
-      }
       if (isNaN(calculatedResult)) {
         setResult('NaN');
       } else if (calculatedResult === Infinity) {
